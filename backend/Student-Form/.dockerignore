@@ -1,0 +1,32 @@
+# Maven / build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+.mvnd/
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml
+*.class
+.vscode/
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Node (if frontend exists in same repo)
+node_modules/
+build/
+dist/
+
+# Others
+*.swp
+*.tmp
