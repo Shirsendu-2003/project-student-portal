@@ -1,0 +1,81 @@
+.header {
+  background-color: #004080;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ensures items stack on smaller screens */
+  text-align: center;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo {
+  max-height: 90px;
+  margin-right: 20px;
+}
+
+.college-info {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.college-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.college-info h3 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+.college-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.org-logos {
+  display: flex;
+  gap: 10px;
+}
+
+.org-logo {
+  max-height: 50px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .college-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .college-info p {
+    font-size: 0.85rem;
+  }
+
+  .org-logos {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    max-height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .college-info h1 {
+    font-size: 1.2rem;
+  }
+}
